@@ -1,6 +1,9 @@
-% RNA-seq Hands-on Tutorial
-% Sean Davis <sdavis2@mail.nih.gov>
-% February 2014
+---
+title: RNA-seq Hands-on Tutorial
+author: Sean Davis <sdavis2@mail.nih.gov>
+date: February, 2015
+output: html_document
+---
 
 # File Formats and RNA-seq
 
@@ -106,7 +109,7 @@ HWI-BRUNOP16X_0001:1:61:19757:138797#0  153     chr1    18357   0       10M6371N
 
 - **Exercise**: Using the [SAM format specification](http://samtools.sourceforge.net/SAMv1.pdf), determine the meaning of the *CIGAR* string (column 6 in each SAM record) for each SAM record.  In particular, what does the "N" operator in the *CIGAR* string mean?
 
-- **Exercise**: Using the ["Explain Flags" tool](http://picard.sourceforge.net/explain-flags.html), determine what the *flag* column in each SAM record means.  The *flag* is in Column 2 of each SAM record, so cut-and-paste this value into the "Explain Flags" tool.
+- **Exercise**: Using the ["Explain Flags" tool](http://broadinstitute.github.io/picard/explain-flags.html), determine what the *flag* column in each SAM record means.  The *flag* is in Column 2 of each SAM record, so cut-and-paste this value into the "Explain Flags" tool.
 
 - **Exercise**: Using the [SAM format specification](http://samtools.sourceforge.net/SAMv1.pdf) again, determine the meaning of the optional tags, *NM*, *NH*, and *XS*.  For the last one, you may need to do a google search, as the *XS* tag is not defined explicitly by the SAM format.
 
@@ -148,9 +151,9 @@ As you now know, the FastQ format represents the raw reads from the sequencer.  
 
 For the next two exercises, use the [FastQC documentation on each analysis module](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/) to help interpret results.
 
-- **Exercise**: Review the results from a [good illumina dataset](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc/fastqc_report.html).
+- **Exercise**: Review the results from a [good illumina dataset](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/good_sequence_short_fastqc.html).
 
-- **Exercise**: Review the results from a [poor illumina dataset](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc/fastqc_report.html).
+- **Exercise**: Review the results from a [poor illumina dataset](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html).
 
 - **Exercise**: Compare and contrast the good and poor datasets.  What do you think might have happened in the "poor" dataset?
 
